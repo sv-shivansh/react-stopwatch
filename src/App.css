@@ -1,0 +1,108 @@
+body {
+  /* background: rgb(2,0,36); */
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(94,28,35,1) 48%, rgba(6,21,24,1) 100%);}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main-section {
+  background: transparent;
+  max-width: 600px;
+  width: 90%;
+  height: 500px;
+  margin: 200px auto;
+}
+
+.clock-holder {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  display: block;
+}
+
+.clock-holder::after{
+  content:""; 
+  background: rgb(255, 255, 255);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+  border-radius: 10px;
+}
+
+.stopwatch {
+  padding: 60px 0px;
+  text-align: center;
+}
+.stopwatch span{
+  background:#ffffff;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: monospace;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70px;
+}
+
+.stopwatch .stopwatch-btn {
+  background: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 150px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.stopwatch .stopwatch-btn-red{
+  border: 2px solid #e23535;
+  color: #e23535;
+}
+.stopwatch .stopwatch-btn-yel{
+  border: 2px solid #ffc107;
+  color: #ffc107;
+}
+
+.stopwatch .stopwatch-btn-gre{
+  border: 2px solid #0ab32f;
+  color: #0ab32f;
+}
+.stopwatch .stopwatch-btn-red:hover {
+  background: #e23535;
+  border: 2px solid #e23535;
+  color: rgb(255, 255, 255);
+}
+.stopwatch .stopwatch-btn-yel:hover {
+  background: #ffc107;
+  border: 2px solid #ffc107;
+  color: rgb(0, 0, 0);
+}
+.stopwatch .stopwatch-btn-gre:hover {
+  background: #0ab32f;
+  border: 2px solid #0ab32f;
+  color: rgb(255, 255, 255);
+}
+
+.AppName {
+  width: 100%;
+  top: 10px;
+  position: fixed;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.Heading {
+  font-size: 88px;
+  color: white;
+  font-family: 'RocknRoll One', sans-serif;
+}
